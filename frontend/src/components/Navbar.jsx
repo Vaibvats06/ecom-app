@@ -3,10 +3,11 @@ import {assets} from '../assets/assets'
 import { NavLink } from 'react-router-dom'
 import {Link} from 'react-router-dom'
 
+
 const Navbar = () => {
     const [visible,setVisible]=useState(false);
   return (
-    <div className='py-5 font-medium flex items-center justify-between'>
+    <div className={`py-5 font-medium flex items-center justify-between`}>
         <Link to='/'><img src={assets.logo} className='w-36' alt="" /></Link>
         <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
@@ -24,7 +25,7 @@ const Navbar = () => {
 
             <NavLink to='/about' className='flex flex-col gap-1 items-center'>
                 <p>ABOUT</p>
-                <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
+                <hr className='w-1/2 border-none h-[1.5px] bg-gray-700 hidden' />
 
             </NavLink>
 

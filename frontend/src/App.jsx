@@ -10,6 +10,7 @@ import Cart from './pages/Cart'
 import Login from './pages/Login'
 import Orders from './pages/Orders'
 import Navbar from './components/Navbar'
+import NotFound from './pages/NotFound'
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contanct/>}/>
         <Route path='/product:productId' element={<Product/>}/>
@@ -26,6 +28,7 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder/>}/>
         <Route path='/collection' element={<Collection/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='*' element={<NotFound/>}/>
       </Routes>
     </div>
   )
